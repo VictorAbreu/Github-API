@@ -1,12 +1,19 @@
 import './styles.css';
-import { ReactComponent as ImgPerfil } from 'assets/img/teste.svg';
 
-const CardPerfil = () => {
+type Props = {
+  urlImagem: string;
+  perfil: string;
+  seguidores: string;
+  localidade: string;
+  nome: string;
+}
+
+const CardPerfil = ({ perfil, seguidores, localidade, nome, urlImagem} : Props) => {
   return (
     <>
       <div className="card-container">
         <div className="card-image-container">
-          <ImgPerfil />
+          <img src={urlImagem} alt="urlImagem" />
         </div>
 
         <div className="card-info-container">
@@ -16,19 +23,19 @@ const CardPerfil = () => {
 
           <div className="card-detail-container">
             <h6>Perfil:</h6>
-            <p>www.github.com/acnelio</p>
+            <p>{perfil}</p>
           </div>
           <div className="card-detail-container">
             <h6>Seguidores:</h6>
-            <p>555555555</p>
+            <p>{seguidores}</p>
           </div>
           <div className="card-detail-container">
             <h6>Localidade:</h6>
-            <p>Uberlândia</p>
+            <p>{localidade}</p>
           </div>
           <div className="card-detail-container">
             <h6>Nome:</h6>
-            <p>Nélio Alves</p>
+            <p>{nome}</p>
           </div>
         </div>
       </div>
