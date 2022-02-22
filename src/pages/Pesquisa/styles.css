@@ -1,5 +1,5 @@
-.home-container {
-  padding: 0 30px;
+.search-container {
+  padding: 30px;
   text-align: left;
   border-radius: 16px;
   background: #e6f7ff;
@@ -7,22 +7,23 @@
   height: 220px;
 }
 
-.home-card-principal {
+.search-card-principal {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  padding: 0;
 }
 
-.home-card-principal h1 {
+.search-card-principal h1 {
   font-size: 38px;
+  margin-bottom: 20px;
 }
 
-.home-card-principal input {
+.search-card-principal input {
   font-size: 16px;
   margin-bottom: 24px;
   width: 300px;
 }
 
-.home-card-principal button {
+.search-card-principal button {
   color: #fff;
 }
